@@ -1,0 +1,119 @@
+<head>
+<script language="JavaScript" src="Poker_01.js"></script>
+
+<style type="text/css">
+body {
+	background-color: #303030;
+	color: #FFFF00;
+}
+
+a:link {
+	color: #FF9966;
+}
+
+a:visited {
+	color: #FF9900;
+}
+
+a:active {
+	color: #FFFFFF;
+}
+</style>
+
+</head>
+
+<body onLoad="init();" 
+>
+
+	<div>
+		<table border="1" cellpadding="0" cellspacing="0" bgcolor="#303030" align="center">
+			<tr>
+				<td>
+					<button id="Herz" name="Herz" type="button" value="Herz" onclick="Farbe_setzen(this);">
+						
+							<img src="img/Herz.png" width="107" height="119" alt="Herz"><br>
+							<b>Herz</b>
+						
+					</button>
+				</td>
+
+				<td rowspan="5">
+					<table id="TableWerteButtons" border="1" cellpadding="0" cellspacing="0" width="100%"
+						bgcolor="#FFFFFF">
+					</table>
+				</td>
+
+				<td>
+					
+						<img id="Card1" name="Card1" src="img/Poker-Karte-leer.jpg" height="119" alt="leere_Karte">
+					
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<button name="Karo" type="button" value="Karo" onclick="Farbe_setzen(this);">
+						
+							<img src="img/Karo.png" width="107" height="119" alt="Karo"><br>
+							<b>Karo</b>
+						
+					</button></td>
+
+				<td>
+					
+						<img id="Card2" name="Card2" src="img/Poker-Karte-leer.jpg" height="119" alt="leere_Karte">
+					
+				</td>
+
+			</tr>
+
+			<tr>
+				<td>
+					<button name="Kreuz" type="button" value="Kreuz" onclick="Farbe_setzen(this);">
+						
+							<img src="img/Kreuz.png" width="107" height="119" alt="Kreuz"><br>
+							<b>Kreuz</b>
+						
+					</button></td>
+
+				<td>
+					
+						<img id="Card3" name="Card3" src="img/Poker-Karte-leer.jpg" height="119" alt="leere_Karte">
+					
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button name="Pik" type="button" value="Pik" onclick="Farbe_setzen(this);">
+						
+							<img src="img/Pik.png" width="107" height="119" alt="Pik"><br>
+							<b>Pik</b>
+						
+					</button>
+				</td>
+
+				<td>
+					
+						<img id="Card4" name="Card4" src="img/Poker-Karte-leer.jpg" height="119" alt="leere_Karte">
+					
+				</td>
+			</tr>
+			<tr>
+				<td>
+				</td>
+
+				<td>
+					
+						<img id="Card5" name="Card5" src="img/Poker-Karte-leer.jpg" height="119" alt="leere_Karte">
+					
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<b><div id="TextAusgabe"  align="center"></div></b>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+</body>
